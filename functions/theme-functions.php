@@ -885,9 +885,9 @@
 		$output = '<table class="gf_directory widefat fixed">
 			<thead>
 				<tr>
-					<th>Makerspace Name</th>
-					<th>City</th>
-					<th>State</th>
+					<th style="text-align:left;">Makerspace Name</th>
+					<th style="text-align:left;">City</th>
+					<th style="text-align:left;">State</th>
 				</tr>
 			</thead>';
 		$i = 1;
