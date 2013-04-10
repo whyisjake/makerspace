@@ -886,7 +886,6 @@
 			<thead>
 				<tr>
 					<th>Makerspace Name</th>
-					<th>Makerspace Website</th>
 					<th>City</th>
 					<th>State</th>
 				</tr>
@@ -895,8 +894,7 @@
 		error_reporting('E_ALL');
 		foreach ($entries as $entry) {
 			$output .= '<tr class="' . ( $i%2 ? 'odd':'even' ) . '">';
-			$output .= '<td>' . $entry['1'] . '</td>';
-			$output .= '<td><a href="' . esc_url( $entry['2'] ) . '">' . $entry['2'] . '</td>';
+			$output .= '<td><a href="' . esc_url( $entry['2'] ) . '">' . $entry['1'] . '</a></td>';
 			$output .= '<td>' . $entry['11'] . '</td>';
 			$output .= '<td>' . $entry['12'] . '</td>';
 			$i++;
