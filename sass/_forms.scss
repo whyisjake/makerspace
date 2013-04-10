@@ -1,0 +1,289 @@
+fieldset { border:0; margin:0; padding:0; }
+textarea {
+	resize:vertical;
+	overflow:auto;
+	vertical-align:top;
+	resize:vertical;
+}
+form { 
+	margin:0;
+
+	.inline {
+		line-height:3;
+  
+  		p { margin-bottom:0; }
+	}
+}
+label { font-weight:bold; cursor:pointer; }
+fieldset { padding:1em; margin:0 0 1.5em; border:1px solid #ccc; }
+legend { font-weight:700; font-size:1.2em; border:0; margin-left:-7px; padding:0; }
+input {
+
+	&[type=checkbox], &[type=radio], &.checkbox, &.radio {
+		position:relative;
+		top:.25em;
+	}
+
+	&[type=button], &[type=reset], &[type=submit] {
+		cursor:pointer;
+		-webkit-appearance:button;
+	}
+
+	&[type=checkbox], &[type=radio] { box-sizing: border-box; }
+	&[type=search] {
+		-webkit-appearance:textfield;
+		-moz-box-sizing:content-box;
+		-webkit-box-sizing:content-box;
+		box-sizing:content-box;
+
+		&::-webkit-search-decoration {
+			-webkit-appearance:none;
+		}
+	}
+	&[type=text], &[type=password], &[type=email], &[type=tel], &[type=search], &.text, &.title {
+		font-size:.8em;
+		padding:8px;
+		margin:.5em 0;
+		border:none;
+    outline:none;
+		@include border-radius(5px);
+		@include single-box-shadow(#999, 0, 1px, 2px, false, true);
+	}
+	&[type=text]:focus, &[type=password]:focus, &.text:focus, &.title:focus {  }
+
+	&[type=submit], #searchsubmit, .searchsubmit {
+		background:#0083c9;
+		color:#fff;
+		border:none;
+    font-size:.9em;
+		padding:7px 14px;
+		@include single-text-shadow(1px, 1px, 1px, false, #000);
+		@include border-radius(5px);
+		@include single-box-shadow(#1a97d0, 1px, 1px, 1px, false, true);
+    position:relative;
+    top:-1px;
+	}
+
+	&[type=submit]:hover, #searchsubmit:hover, .searchsubmit:hover {
+		background:#005A91;
+    border:none;
+    color:#fff;
+    @include single-box-shadow(#ccc, 0, 0, 5px);
+	}
+}
+textarea { width:100%; height:90px; padding:5px; }
+
+button, input {
+  line-height: normal;
+  overflow: visible;
+}
+
+table {
+  button, input {
+    overflow: auto;
+  }
+}
+
+button {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input:valid!, textarea:valid! {  }
+
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+textarea, select {
+  background-color: #fff;
+  border: 1px solid #7a7979;
+  font-size: .8em;
+  padding: 5px;
+  box-shadow: inset 0 0 5px #c2c1c1;
+}
+
+textarea:focus, select:focus {
+  border-color: #666;
+  box-shadow: none;
+}
+
+textarea, select {
+  margin: .5em 0;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input:-moz-placeholder, textarea:-moz-placeholder {
+  font-family: sans-serif;
+  letter-spacing: .01em;
+  color: #6e6e6e;
+}
+
+/********** Gravity Forms **********/
+.gform_wrapper { margin:0 !important; }
+.gform_wrapper input {
+  &[type="text"], &[type="url"], &[type="email"], &[type="tel"], &[type="number"], &[type="password"] {
+    padding: 5px;
+  }
+}
+input {
+  &[type="text"], &[type="password"], &[type="email"], &[type="tel"], &.text, &.title {
+    margin: 0;
+  }
+}
+textarea, select { margin:0; }
+img.ui-datepicker-trigger { vertical-align: middle; }
+.ui-datepicker-div, #ui-datepicker-div { width: 273px !important; }
+.gform_wrapper .left_label .gfield_label { margin-bottom: 15px; }
+.gform_wrapper .gform_footer.right_label, .gform_wrapper .gform_footer.left_label, .gform_wrapper .gform_footer { padding:0 !important; text-align:right; }
+.gform_widget {
+  background:#049af3;
+  color:#fff;
+
+  input[type=text], input[type=email] { width:100% !important; padding:5px !important; }
+}
+.gform_wrapper ul li.gfield { margin-bottom:14px; }
+.tablenav { text-align:right; }
+.search-box { position:absolute; width:46%; 
+  input { float:left; }
+  input[type=submit] { position:relative; top:-19px; }
+}
+.makerspace-directory_wrapper {
+  .gform_footer { height:0; 
+    input[type="submit"] { top:7px; }
+  }
+}
+table.gf_directory { text-align:center; border:1px solid #d1d1d1; 
+  tbody tr {
+    &.even { background:#eaeaea; }
+    &:hover { background:#e8f6ff; }
+  }
+  thead tr, tfoot tr { background:#d1d1d1; }
+}
+
+/* [ Home ] */
+
+/********** Comment other WordPress Form Styles **********/
+
+#searchform!, .form! {}
+
+#s, .s {
+  width:164px;
+  @include single-transition(all, .1s);
+
+  &:focus {
+    width:50%;
+    @include single-transition(all, .1s);
+  }
+}
+
+#comments-list, #respond {
+  margin-left: 10px;
+  background: transparent;
+  padding: 10px;
+}
+
+.commentlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    &.alt!, &.bypostauthor!, &.byuser!, &.comment-author-admin! {}
+    .comment {
+      width: 85%;
+    }
+    .comment-meta {
+      margin-bottom: 5px;
+    }
+    &.comment {
+      border-bottom: 1px dotted #666;
+      padding: 10px;
+      .gravatar {
+        width: 10%;
+      }
+      div {
+        &.commentmetadata! {}
+        &.comment-meta {
+          font-size: 10px;
+          a {
+            color: #ccc;
+          }
+        }
+      }
+      p! {}
+      ul {
+        list-style: none;
+      }
+      div.reply {
+        font-size: 11px;
+        text-align: right;
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  ul.children {
+    list-style: none;
+    margin: 10px 0 0;
+    li {
+      &.alt!, &.bypostauthor!, &.byuser!, &.comment!, &.comment-author-admin! {}
+      &.depth-2 {
+        border-left: 5px solid #555;
+        margin: 0 0 10px 10px;
+      }
+      &.depth-3 {
+        border-left: 5px solid #999;
+        margin: 0 0 10px 10px;
+      }
+      &.depth-4 {
+        border-left: 5px solid #bbb;
+        margin: 0 0 10px 10px;
+      }
+      &.depth-5!, &.odd! {}
+    }
+  }
+  li {
+    &.even {
+      background: #fff;
+    }
+    &.odd {
+      background: #EBEBEB;
+    }
+    &.parent {
+      border-left: 5px solid #111;
+    }
+    &.thread-alt!, &.thread-even!, &.thread-odd! {}
+  }
+  h2 {
+    margin: 0;
+    padding: 10px 0 0;
+  }
+}
+
+#respond {
+  h2 {
+    margin: 0;
+    padding: 10px 0 0;
+  }
+  label {
+    display: none;
+  }
+  input, textarea {
+    width: 98%;
+    padding: 10px 5px;
+    font-size: .8em;
+  }
+  input {
+    &[type=text]! {}
+    &[type=submit] {
+      width: auto;
+      margin: 10px 0;
+      text-align: right;
+    }
+  }
+}

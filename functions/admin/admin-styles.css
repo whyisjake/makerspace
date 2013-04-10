@@ -1,0 +1,84 @@
+/********** Structure Styles **********/
+#main-container { width:85%; min-width:30%; }
+
+/********** Box Sections Styles **********/
+.section { background:#f8f8f8; border-radius:10px; margin:10px 0; }
+.section h3 { background:#2196d3; border-radius:10px 10px 0 0; padding:5px 10px; color:#fff; margin:0; font-size:1.5em; line-height:1.5em; border-bottom:1px solid #333; }
+.section .box-container { padding:20px 10px; box-shadow:inset 0 3px 5px #dcdcdc; border-radius:0 0 10px 10px; border-bottom:1px solid #ededed; position:relative; }
+.section .box-container > div { margin-bottom:10px; }
+.section label { width:25%; min-height:40px; float:left; font-weight:bold; font-size:1.1em; padding-top:8px; cursor:default; }
+.section .description { font-style:italic; display:block; }
+.section input[type=text], .section textarea, .section select { width:67%; padding:5px; }
+.section textarea { height:50px; }
+.section input[type=text]:focus, .section input[type=textarea]:focus, .section input[type=button]:hover, .section input[type=button]:focus { border:1px solid #2195d3; }
+.section input[type=checkbox] { position:relative; top:8px; }
+.section .checkbox-group { margin-bottom:0 !important; }
+.section .checkbox-group label { min-height:16px; }
+.section div.dsml-text-button input[type=text] { width:59%; }
+.section div.dsml-text-color input[type=text] { width:62%; }
+.section input[type=button]:hover, .section input[type=button]:focus { color:#2195d3; }
+.section input[type=button] { cursor:pointer; padding:5px; }
+.section .slider-url-field { margin-bottom:40px !important; }
+#fw-background-image-wrapper { min-height:195px; }
+.fw-wrap .checkbox { background-color:transparent; }
+#options-column { float:left; width:74%; }
+#options-column .image-select { float:left; cursor:pointer; position:relative; }
+#options-column .image-select img { margin:5px; }
+#options-column .image-select.selected > img { border:1px solid #2196D3 !important; box-shadow:0 0 10px rgba(33,150,211,.5); margin:4px; }
+#options-column .image-select:hover > img { border:1px solid #ccc; margin:4px; }
+.jttip { text-align:center; position:absolute; margin-top:-5px; display:none; z-index:999; }
+.jttipcontent { padding:8px 15px; background:#fff; border-radius:5px; box-shadow:0 0 10px #999; border: 1px solid #bbd4fd; }
+img.nubbin { margin: 0 auto -6px !important; border:none; outline:none; }
+.jttipcontent h4 { margin:0; }
+
+/********** Typography Options **********/
+div.typography select { width:21%; float:left; }
+div.typography #typography-example { float:left; margin:5px 0 0 34px; font-size:1.1em; width:49%; line-height:1.1em; }
+div.typography #typography-example p { margin:0; }
+
+/********** Sliding Panels **********/
+.fw-wrap .panel h2 { background:#2196D3 url('../../images/panel-arrows.png') right top no-repeat; padding:10px; color:#fff; text-shadow:1px 1px 1px #333; border-radius:10px 10px 0 0; box-shadow:0 0 5px rgba(0,0,0,0.1); font-size:1.5em; cursor:pointer; }
+.fw-wrap .panel.open h2 { background-position:right -36px; }
+.fw-wrap .panel-body { border:1px solid #ccc; padding:10px; box-shadow:0 0 5px rgba(0,0,0,0.1); border-radius:0 0 10px 10px; background:rgba(255,255,255,0.5); margin-bottom:20px; }
+
+/********** Colorpicker Styles **********/
+.colorpicker { width:356px; height:176px; overflow:hidden; position:absolute; font-family:Arial, Helvetica, sans-serif; display:none; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; background:#ccc; background:rgba(204,204,204,0.8); border:1px solid #bbb; }
+.colorpicker_color { width:150px; height:150px; left:14px; top:13px; position:absolute; background:#f00; overflow:hidden; cursor:crosshair; border:1px solid #bbb; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; }
+.colorpicker_color div { position:absolute; top:0; left:0; width:150px; height:150px; background:url('../admin/colorpicker/colorpicker_overlay.png'); }
+.colorpicker_color div div { position:absolute; top:0; left:0; width:11px; height:11px; overflow:hidden; background:url('../admin/colorpicker/color-select.gif'); margin:-5px 0 0 -5px; }
+.colorpicker_hue { position:absolute; top:13px; left:171px; width:35px; height:150px; cursor:n-resize; background:url('../admin/colorpicker/hue.jpg'); border:1px solid #bbb; }
+.colorpicker_hue div { position:absolute; width:35px; height:9px; overflow:hidden; background:url('../admin/colorpicker/colorpicker_indic.gif') left top; margin:-4px 0 0; left:0; }
+.colorpicker_new_color { position:absolute; width:60px; height:30px; left:213px; top:13px; background:#f00; border:1px solid #bbb; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; }
+.colorpicker_current_color { position:absolute; width:60px; height:30px; left:283px; top:13px; background:#f00; border:1px solid #bbb; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; }
+.colorpicker input { background-color:transparent; border:1px solid transparent; position:absolute; font-size:10px; font-family:Arial, Helvetica, sans-serif; color:#898989; top:4px; right:8px; text-align:right; margin:0; padding:0; height:12px; line-height:1em; }
+.colorpicker_hex { position:absolute; width:72px; height:22px; background:url('../admin/colorpicker/hex-field.jpg') top; left:212px; top:142px; }
+.colorpicker_hex input { right:6px; }
+.colorpicker_field { height:22px; width:62px; background-position:top; position:absolute; }
+.colorpicker_field span { position:absolute; width:12px; height:22px; overflow:hidden; top:0; right:0; cursor:n-resize; }
+.colorpicker_rgb_r { background-image:url('../admin/colorpicker/rgb-r.jpg'); top:52px; left:212px; }
+.colorpicker_rgb_g { background-image:url('../admin/colorpicker/rgb-g.jpg'); top:82px; left:212px; }
+.colorpicker_rgb_b { background-image:url('../admin/colorpicker/rgb-b.jpg'); top:112px; left:212px; }
+.colorpicker_hsb_h { background-image:url('../admin/colorpicker/hsb-h.jpg'); top:52px; left:282px; }
+.colorpicker_hsb_s { background-image:url('../admin/colorpicker/hsb-s.jpg'); top:82px; left:282px; }
+.colorpicker_hsb_b { background-image:url('../admin/colorpicker/hsb-b.jpg'); top:112px; left:282px; }
+.colorpicker_submit { position:absolute; width:49px; height:22px; background:url('../admin/colorpicker/submit-btn.jpg') top; left:296px; top:142px; overflow:hidden; }
+.colorpicker_focus { background-position:center; }
+.colorpicker_hex.colorpicker_focus { background-position:bottom; }
+.colorpicker_submit.colorpicker_focus { background-position:bottom; }
+.colorpicker_slider { background-position:bottom; }
+.section .fw-text-color  input { width:8%; }
+div.colorpicker-wrapper { float:right; width:66%; }
+div.colorpicker-icon { height:25px; width:95%; position:relative; float:left; top:2px; margin-left:10px; background:#fff; }
+div.colorpicker-icon div { width:29px; height:29px; margin:auto; position:relative; top:1px; }
+div.color-copy { float:left; position:relative; top:2px; border:1px solid #ccc; border-radius:0 5px 5px 0; padding:3px 8px 4px; text-align:center; background:#fff; cursor:pointer; }
+div.color-copy:hover { background:#eee; border:1px solid #bbb; color:#000; }
+div.fw-text-color small.description { position:relative; left:0px; top:5px; }
+div.fw-text-color { margin-bottom:7px; }
+div#options-column #background-display { position:absolute; left:38px; top:125px; text-align:center; text-transform:capitalize; }
+div#options-column #background-display img { width:110px; }
+
+/********** Common Styles **********/
+.section h3 { background-image:linear-gradient(bottom,rgb(27,109,163) 20% rgb(33,149,211) 80%; background-image:0 20% rgb(33,149,211) 80%; background-image:0 20% rgb(33,149,211) 80%; background-image:0 20% rgb(33,149,211) 80%; background-image:0 20% rgb(33,149,211) 80%; background-image:0 color-stop(0.8,rgb(33,149,211))); }
+.group:before, .group:after { content:""; display:table; }
+.group:after { clear:both; }
+.group { zoom:1; }

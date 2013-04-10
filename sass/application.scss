@@ -1,0 +1,17 @@
+//Set global variables
+$gramond_times:gramond, 'times new roman', serif;
+$default-border-radius: 10px; //used in the compass border-radius mixin
+$_columns:12; //total number of columns
+$_column-width:59px; //width of a single column. Together this makes a 948px max width with gutters of 20px
+$_gutter:20px; //width of the gutters
+
+//load site wide partials
+@import "normalize"; //Import our rest styles -- http://necolas.github.com/normalize.css/
+@import "blankwork"; /* contains our grid system */
+@import "compass"; /* Import the Compass mixins to allow us to use Background Gradients */
+@import "base"; //Import our base line styles / Common styles
+@import "menu"; //Import our menu styles
+@import "forms"; //Import our form styles 
+@import "slider"; //Import our slider styles
+@import "structure"; //Import our styles for layout (primary file that controls the site)
+@import "print"; //Import our print styles 
