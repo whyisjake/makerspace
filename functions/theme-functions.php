@@ -891,8 +891,9 @@
 				</tr>
 			</thead>';
 		$i = 1;
+		error_reporting('E_ALL');
 		foreach ($entries as $entry) {
-			$output .= '<tr class="' . ($i%2 ? 'odd':'even') . '">';
+			$output .= '<tr class="' . ( $i%2 ? 'odd':'even' ) . '">';
 			$output .= '<td>' . $entry['1'] . '</td>';
 			$output .= '<td><a href="' . esc_url( $entry['2'] ) . '">' . $entry['2'] . '</td>';
 			$output .= '<td>' . $entry['11'] . '</td>';
