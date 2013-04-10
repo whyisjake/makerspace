@@ -894,7 +894,7 @@
 		error_reporting('E_ALL');
 		foreach ($entries as $entry) {
 			$output .= '<tr class="' . ( $i%2 ? 'odd':'even' ) . '">';
-			$output .= '<td><a href="' . esc_url( $entry['2'] ) . '">' . $entry['1'] . '</a></td>';
+			$output .= '<td style="text-align:left;"><a href="' . esc_url( $entry['2'] ) . '">' . $entry['1'] . '</a></td>';
 			$output .= '<td>' . $entry['11'] . '</td>';
 			$output .= '<td>' . $entry['12'] . '</td>';
 			$i++;
