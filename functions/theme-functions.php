@@ -890,12 +890,14 @@
 					<th>State</th>
 				</tr>
 			</thead>';
+		$i = 1;
 		foreach ($entries as $entry) {
-			$output .= '<tr>';
+			$output .= '<tr class="' . ($i%2 ? 'odd':'even') . '">';
 			$output .= '<td>' . $entry['1'] . '</td>';
 			$output .= '<td><a href="' . esc_url( $entry['2'] ) . '">' . $entry['2'] . '</td>';
 			$output .= '<td>' . $entry['11'] . '</td>';
 			$output .= '<td>' . $entry['12'] . '</td>';
+			$i++;
 		}
 		$output .= '</table>';
 		return $output;
