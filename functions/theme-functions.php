@@ -879,8 +879,8 @@
 
 
 	function mms_directory() {
-		$entries = RGFormsModel::get_leads(1, '1.6', 'ASC');
-		var_dump($entries);
+		$entries = RGFormsModel::get_leads(2, '1.6', 'ASC');
+		//var_dump($entries);
 		$output = '<table class="gf_directory widefat fixed">
 			<thead>
 				<tr>
